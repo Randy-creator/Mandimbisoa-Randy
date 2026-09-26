@@ -81,20 +81,19 @@ export function Skills() {
                     </h3>
                   </div>
 
-                                    <p className="mt-5 text-base leading-relaxed text-muted">
-                    {group.items.map((item, idx) => (
-                      <span key={item}>
-                        <span className="transition-colors duration-500 group-hover:text-fg">
+                  <ul className="mt-5 flex flex-wrap gap-2">
+                    {group.items.map((item) => (
+                      <li key={item}>
+                        <span className="group/t inline-flex items-center gap-2 rounded-xl border border-line bg-surface px-2.5 py-1.5 text-sm whitespace-nowrap text-muted transition-colors duration-300 hover:border-brand/50 hover:text-fg">
+                          <span
+                            aria-hidden
+                            className="size-2 rounded-[3px] bg-brand/50 transition-colors duration-300 group-hover/t:bg-brand"
+                          />
                           {item}
                         </span>
-                        {idx < group.items.length - 1 ? (
-                          <span className="text-line-strong transition-colors duration-500 group-hover:text-brand">
-                            {" · "}
-                          </span>
-                        ) : null}
-                      </span>
+                      </li>
                     ))}
-                  </p>
+                  </ul>
                 </div>
               </article>
             </Reveal>
