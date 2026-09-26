@@ -190,7 +190,7 @@ export const copy: Record<Locale, Copy> = {
       quoteBy: "Mandimbisoa Randy",
       socialsTitle: "Me suivre",
       lead:
-        "Développeur motivé, passionné par l'apprentissage et la résolution de problèmes. Curieux et toujours prêt à relever de nouveaux défis, je cherche à évoluer au sein d'une équipe dynamique. J'aime innover, m'adapter et contribuer concrètement à des projets qui ont du sens.",
+        "Développeur full-stack, passionné par la conception d'applications web et mobiles performantes. Spécialisé en architectures modernes, je conçois des solutions fluides, robustes et évolutives. Toujours en veille technologique, j'apporte une réelle valeur ajoutée à chaque projet avec rigueur, autonomie et esprit d'innovation.",
       ctaPrimary: "Voir mes projets",
       ctaSecondary: "Me contacter",
       scroll: "Défiler",
@@ -216,15 +216,27 @@ export const copy: Record<Locale, Copy> = {
         "Data & pipelines",
       ],
       groups: [
-        { title: "Langages", items: ["Java", "Python", "JavaScript", "PHP", "HTML", "CSS"] },
+        {
+          title: "Langages",
+          items: ["Java", "Python", "TypeScript", "JavaScript", "PHP", "HTML", "CSS"],
+        },
         {
           title: "Frameworks",
-          items: ["React", "Next.js", "NestJS", "Laravel", "Quarkus", "Express"],
+          items: ["React", "Next.js", "NestJS", "Spring Boot", "Laravel", "Quarkus", "Express"],
         },
         { title: "Cloud", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda"] },
         {
           title: "Outils & IDE",
-          items: ["VS Code", "IntelliJ", "Cursor", "Git", "Google Workspace"],
+          items: [
+            "VS Code",
+            "IntelliJ",
+            "Cursor",
+            "Git",
+            "Google Workspace",
+            "Power BI",
+            "Looker Studio",
+            "Canva",
+          ],
         },
         { title: "Systèmes", items: ["Linux", "Windows"] },
       ],
@@ -437,7 +449,7 @@ export const copy: Record<Locale, Copy> = {
       quoteBy: "Mandimbisoa Randy",
       socialsTitle: "Find me",
       lead:
-        "A motivated developer, passionate about learning and problem-solving. Curious and always ready to take on new challenges, I am looking to grow within a dynamic team. I love innovating, adapting, and contributing concretely to projects that matter.",
+        "Full-stack developer, passionate about designing high-performing web and mobile applications. Specialised in modern architectures, I build solutions that are fluid, robust and scalable. I keep a close eye on new technology, and bring real value to every project with rigour, autonomy and an inventive mindset.",
       ctaPrimary: "View my projects",
       ctaSecondary: "Get in touch",
       scroll: "Scroll",
@@ -463,15 +475,27 @@ export const copy: Record<Locale, Copy> = {
         "Data & pipelines",
       ],
       groups: [
-        { title: "Languages", items: ["Java", "Python", "JavaScript", "PHP", "HTML", "CSS"] },
+        {
+          title: "Languages",
+          items: ["Java", "Python", "TypeScript", "JavaScript", "PHP", "HTML", "CSS"],
+        },
         {
           title: "Frameworks",
-          items: ["React", "Next.js", "NestJS", "Laravel", "Quarkus", "Express"],
+          items: ["React", "Next.js", "NestJS", "Spring Boot", "Laravel", "Quarkus", "Express"],
         },
         { title: "Cloud", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda"] },
         {
           title: "Tools & IDEs",
-          items: ["VS Code", "IntelliJ", "Cursor", "Git", "Google Workspace"],
+          items: [
+            "VS Code",
+            "IntelliJ",
+            "Cursor",
+            "Git",
+            "Google Workspace",
+            "Power BI",
+            "Looker Studio",
+            "Canva",
+          ],
         },
         { title: "Operating systems", items: ["Linux", "Windows"] },
       ],
