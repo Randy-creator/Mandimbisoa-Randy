@@ -1,5 +1,4 @@
 type Props = {
-
   index: number;
   label: string;
 };

@@ -22,9 +22,7 @@ function ThemeToggle() {
         root.dataset.theme = next;
         try {
           localStorage.setItem("mr-theme", next);
-        } catch {
-
-        }
+        } catch {}
       }}
       aria-label="Toggle colour theme"
 

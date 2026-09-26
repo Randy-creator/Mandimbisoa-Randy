@@ -35,9 +35,7 @@ export function SiteProvider({ children }: { children: React.ReactNode }) {
     document.documentElement.lang = next;
     try {
       localStorage.setItem(STORAGE_KEY, next);
-    } catch {
-
-    }
+    } catch {}
     window.dispatchEvent(new Event(CHANGE_EVENT));
   }, []);
 

@@ -17,8 +17,18 @@ d.dataset.theme=s.getItem('mr-theme')||'dark';
 d.lang=s.getItem('mr-locale')||'fr';
 }catch(e){d.dataset.theme='dark';d.lang='fr';}})();`;
 
+const siteUrl = (() => {
+  const raw = process.env.NEXT_PUBLIC_SITE_URL?.trim();
+  if (!raw) return new URL("http://localhost:3000");
+  try {
+    return new URL(/^https?:\/\//i.test(raw) ? raw : `https://${raw}`);
+  } catch {
+    return new URL("http://localhost:3000");
+  }
+})();
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
+  metadataBase: siteUrl,
   title: {
     default: copy.fr.meta.title,
     template: `%s`,

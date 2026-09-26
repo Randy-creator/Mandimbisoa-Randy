@@ -1,7 +1,6 @@
 import { Sprig, Vine, VineRule } from "./vine";
 
 type GardenProps = {
-
   tone?: "page" | "band";
 
   variant?: "left" | "right" | "top" | "bottom" | "corners" | "none";

@@ -94,7 +94,6 @@ export async function POST(request: Request) {
   const hasResend = Boolean(RESEND_API_KEY);
 
   if (!hasGmail && !hasResend) {
-
     console.info("[contact] submission (no mail provider configured)", {
       name,
       email,

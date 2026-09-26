@@ -52,7 +52,6 @@ type Copy = {
   nav: { links: { id: string; label: string }[]; cta: string; menu: string; close: string };
   availability: string;
   hero: {
-
     eyebrow: string;
 
     title: string;
@@ -171,7 +170,6 @@ export const copy: Record<Locale, Copy> = {
         "Portfolio de Mandimbisoa Randy, développeur full-stack basé à Antananarivo, Madagascar. Spécialisé en Java, Python, React, Next.js, Laravel, Quarkus et cloud AWS.",
     },
     nav: {
-
       links: [
         { id: "skills", label: "Compétences" },
         { id: "experience", label: "Expérience" },
