@@ -197,8 +197,8 @@ export const copy: Record<Locale, Copy> = {
       photoAlt: "Portrait de Mandimbisoa Randy",
       badge: "Parlons-en",
       stats: [
-        { value: "4", label: "Projets menés" },
-        { value: "3ᵉ", label: "Cloudflight Coding Contest" },
+        { value: "> 8", label: "Projets menés" },
+        { value: "> 3", label: "Compétition" },
         { value: "10+", label: "Stack cloud & conteneur" },
         { value: "C1", label: "Anglais & français" },
       ],
@@ -444,8 +444,8 @@ export const copy: Record<Locale, Copy> = {
       photoAlt: "Portrait of Mandimbisoa Randy",
       badge: "Let's talk",
       stats: [
-        { value: "4", label: "Projects delivered" },
-        { value: "3rd", label: "Cloudflight Coding Contest" },
+        { value: "> 8", label: "Projects delivered" },
+        { value: "> 3", label: "Competition" },
         { value: "10+", label: "Cloud & container stack" },
         { value: "C1", label: "English & French" },
       ],
