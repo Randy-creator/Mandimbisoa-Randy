@@ -190,7 +190,7 @@ export const copy: Record<Locale, Copy> = {
       quoteBy: "Mandimbisoa Randy",
       socialsTitle: "Me suivre",
       lead:
-        "Développeur full-stack, passionné par la conception d'applications web et mobiles performantes. Spécialisé en architectures modernes, je conçois des solutions fluides, robustes et évolutives. Toujours en veille technologique, j'apporte une réelle valeur ajoutée à chaque projet avec rigueur, autonomie et esprit d'innovation.",
+        "Développeur Full-Stack | Je conçois des applications web et mobiles fluides, performantes et évolutives. Passionné par l'innovation technique, je transforme vos idées en solutions logicielles robustes et concrètes.",
       ctaPrimary: "Voir mes projets",
       ctaSecondary: "Me contacter",
       scroll: "Défiler",
@@ -222,9 +222,9 @@ export const copy: Record<Locale, Copy> = {
         },
         {
           title: "Frameworks",
-          items: ["React", "Next.js", "NestJS", "Spring Boot", "Laravel", "Quarkus", "Express"],
+          items: ["React", "Next.js", "NestJS", "Spring Boot", "Laravel", "Quarkus", "Express", "VueJS  "],
         },
-        { title: "Cloud", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda"] },
+        { title: "Cloud & Base de donnée", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda", "PostgreSQL/MySQL", "Supabase", "NeonDB"] },
         {
           title: "Outils & IDE",
           items: [
@@ -450,8 +450,7 @@ export const copy: Record<Locale, Copy> = {
         "Curious by nature, I like understanding a system before I touch it — then shipping something clean, quickly, and built to last.",
       quoteBy: "Mandimbisoa Randy",
       socialsTitle: "Find me",
-      lead:
-        "Full-stack developer, passionate about designing high-performing web and mobile applications. Specialised in modern architectures, I build solutions that are fluid, robust and scalable. I keep a close eye on new technology, and bring real value to every project with rigour, autonomy and an inventive mindset.",
+      lead: "Full-Stack Developer | I build fast, scalable web and mobile applications. Passionate about modern tech, I transform complex ideas into clean, robust, and impactful software solutions.",
       ctaPrimary: "View my projects",
       ctaSecondary: "Get in touch",
       scroll: "Scroll",
@@ -485,7 +484,7 @@ export const copy: Record<Locale, Copy> = {
           title: "Frameworks",
           items: ["React", "Next.js", "NestJS", "Spring Boot", "Laravel", "Quarkus", "Express"],
         },
-        { title: "Cloud", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda"] },
+        { title: "Cloud & Database", items: ["Docker", "AWS S3", "AWS EC2", "AWS Lambda", "PostgreSQL/MySQL", "Supabase", "NeonDB"] },
         {
           title: "Tools & IDEs",
           items: [
