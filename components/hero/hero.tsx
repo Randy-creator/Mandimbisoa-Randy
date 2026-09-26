@@ -58,7 +58,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden bg-hero text-hero-fg"
+      className="relative left-1/2 flex w-screen -translate-x-1/2 min-h-[100svh] flex-col justify-center overflow-hidden bg-hero text-hero-fg"
     >
             <div aria-hidden className="pointer-events-none absolute inset-0 overflow-hidden">
         <div
