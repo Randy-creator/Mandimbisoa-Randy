@@ -36,6 +36,9 @@ async function sendViaGmail(input: { name: string; email: string; subject: strin
   const transport = createTransport({
     service: "gmail",
     auth: { user: GMAIL_USER, pass: GMAIL_APP_PW },
+    connectionTimeout: 8000,
+    greetingTimeout: 8000,
+    socketTimeout: 15000,
   });
 
   await transport.sendMail({
@@ -103,15 +106,30 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: true, delivered: false });
   }
 
-  try {
-    if (hasGmail) {
-      await sendViaGmail(payload);
-    } else {
-      await sendViaResend(payload);
+  const providers: Array<{ name: string; send: () => Promise<void> }> = [];
+  if (hasGmail) providers.push({ name: "gmail", send: () => sendViaGmail(payload) });
+  if (hasResend) providers.push({ name: "resend", send: () => sendViaResend(payload) });
+
+  const failures: string[] = [];
+
+  for (const provider of providers) {
+    try {
+      await provider.send();
+      return NextResponse.json({ ok: true, delivered: true });
+    } catch (error) {
+      console.error(`[contact] ${provider.name} send failed`, error);
+      failures.push(`${provider.name}:${failureCode(error)}`);
     }
-    return NextResponse.json({ ok: true, delivered: true });
-  } catch (error) {
-    console.error("[contact] send failed", error);
-    return NextResponse.json({ error: "provider_error" }, { status: 502 });
   }
+
+  return NextResponse.json({ error: "provider_error", failures }, { status: 502 });
+}
+
+function failureCode(error: unknown) {
+  if (error && typeof error === "object" && "code" in error) {
+    const code = String((error as { code?: unknown }).code ?? "");
+    if (code) return code.slice(0, 40);
+  }
+  if (error instanceof Error) return error.name.slice(0, 40);
+  return "unknown";
 }
